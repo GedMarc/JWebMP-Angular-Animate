@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularslimscroll;
+package za.co.mmagon.jwebswing.plugins.angularanimate;
 
 import org.junit.Test;
 import za.co.mmagon.BaseTestClass;
@@ -8,10 +8,10 @@ import za.co.mmagon.jwebswing.Page;
  *
  * @author Marc Magon
  */
-public class AngularSlimScrollPageConfiguratorTest extends BaseTestClass
+public class AngularAnimateConfiguratorTest extends BaseTestClass
 {
 
-    public AngularSlimScrollPageConfiguratorTest()
+    public AngularAnimateConfiguratorTest()
     {
     }
 
