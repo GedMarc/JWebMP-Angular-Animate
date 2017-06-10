@@ -11,7 +11,7 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum AngularAnimations implements ReferencePool
+enum AngularAnimationsReferencePool implements ReferencePool
 {
     AngularAnimations(new JavascriptReference("AngularAnimations", 1.6, "bower_components/angular-animate/angular-animate.js"), null);
     /**
@@ -22,7 +22,7 @@ enum AngularAnimations implements ReferencePool
     /**
      * A new AngularSlimScrollReferencePool
      */
-    private AngularAnimations()
+    private AngularAnimationsReferencePool()
     {
 
     }
@@ -30,7 +30,7 @@ enum AngularAnimations implements ReferencePool
     /**
      * A new AngularSlimScrollReferencePool with data
      */
-    private AngularAnimations(String data)
+    private AngularAnimationsReferencePool(String data)
     {
 
     }
@@ -38,7 +38,7 @@ enum AngularAnimations implements ReferencePool
     private JavascriptReference javaScriptReference;
     private CSSReference cssReference;
 
-    private AngularAnimations(JavascriptReference javaScriptReference, CSSReference cssReference)
+    private AngularAnimationsReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
     {
         this.javaScriptReference = javaScriptReference;
         if (this.javaScriptReference != null)

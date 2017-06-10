@@ -8,10 +8,10 @@ import za.co.mmagon.jwebswing.Page;
  *
  * @author Marc Magon
  */
-public class AngularAnimateConfiguratorTest extends BaseTestClass
+public class AngularAnimatePageConfiguratorTest extends BaseTestClass
 {
 
-    public AngularAnimateConfiguratorTest()
+    public AngularAnimatePageConfiguratorTest()
     {
     }
 
