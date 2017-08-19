@@ -10,20 +10,20 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  */
 class AngularAnimateModule extends AngularModuleBase
 {
-
-    private static final long serialVersionUID = 1L;
-
-    /*
-     * Constructs a new AngularAnimateModule
-     */
-    public AngularAnimateModule()
-    {
-        super("ngAnimate");
-    }
-
-    @Override
-    public String renderFunction()
-    {
-        return null;
-    }
+	
+	private static final long serialVersionUID = 1L;
+	
+	/*
+	 * Constructs a new AngularAnimateModule
+	 */
+	public AngularAnimateModule()
+	{
+		super("ngAnimate");
+	}
+	
+	@Override
+	public String renderFunction()
+	{
+		return null;
+	}
 }

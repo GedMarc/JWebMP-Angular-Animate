@@ -5,21 +5,20 @@ import za.co.mmagon.BaseTestClass;
 import za.co.mmagon.jwebswing.Page;
 
 /**
- *
  * @author Marc Magon
  */
 public class AngularAnimatePageConfiguratorTest extends BaseTestClass
 {
 
-    public AngularAnimatePageConfiguratorTest()
-    {
-    }
+	public AngularAnimatePageConfiguratorTest()
+	{
+	}
 
-    @Test
-    public void testSomeMethod()
-    {
-        Page p = getInstance();
-        System.out.println(p.toString(0));
-    }
+	@Test
+	public void testSomeMethod()
+	{
+		Page p = getInstance();
+		System.out.println(p.toString(0));
+	}
 
 }
