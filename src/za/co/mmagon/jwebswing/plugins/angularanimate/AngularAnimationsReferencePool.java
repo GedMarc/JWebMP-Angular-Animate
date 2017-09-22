@@ -24,19 +24,20 @@ enum AngularAnimationsReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private AngularAnimationsReferencePool()
+	AngularAnimationsReferencePool()
 	{
 	
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private AngularAnimationsReferencePool(String data)
+	AngularAnimationsReferencePool(String data)
 	{
-	
+
 	}
 	
-	private AngularAnimationsReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	AngularAnimationsReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)
