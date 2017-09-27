@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularprettycheckboxes;
+package za.co.mmagon.jwebswing.plugins.angularanimate;
 
 import org.junit.Test;
 import za.co.mmagon.BaseTestClass;

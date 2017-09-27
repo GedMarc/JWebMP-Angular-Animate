@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularprettycheckboxes;
+package za.co.mmagon.jwebswing.plugins.angularanimate;
 
 import za.co.mmagon.jwebswing.base.references.CSSReference;
 import za.co.mmagon.jwebswing.base.references.JavascriptReference;
@@ -11,7 +11,7 @@ import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum AngularPrettyCheckboxesReferencePool implements ReferencePool
+enum AngularAnimationsReferencePool implements ReferencePool
 {
 	AngularAnimations(new JavascriptReference("AngularAnimations", 1.6, "bower_components/angular-animate/angular-animate.js"), null);
 	/**
@@ -24,7 +24,7 @@ enum AngularPrettyCheckboxesReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	AngularPrettyCheckboxesReferencePool()
+	AngularAnimationsReferencePool()
 	{
 	
 	}
@@ -32,12 +32,12 @@ enum AngularPrettyCheckboxesReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	AngularPrettyCheckboxesReferencePool(String data)
+	AngularAnimationsReferencePool(String data)
 	{
 
 	}
 	
-	AngularPrettyCheckboxesReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	AngularAnimationsReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)
