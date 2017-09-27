@@ -3,13 +3,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>za.co.mmagon</groupId>
-    <artifactId>jwebswing-angular-animate</artifactId>
+    <artifactId>jwebswing-angular-pretty-checkboxes</artifactId>
     <version>0.0.0_0</version>
     <packaging>jar</packaging>
 
-    <name>Angular Animate Addon</name>
-    <description>The JWebSwing implementation for Angular Animate</description>
-    <url>https://github.com/GedMarc/Angular-Animate</url>
+    <name>Angular Pretty Checkboxes</name>
+    <description>The JWebSwing implementation for Angular Pretty Checkboxes</description>
+    <url>https://github.com/GedMarc/JWebSwing-AngularPrettyCheckboxes</url>
 
 
     <repositories>
@@ -235,7 +235,7 @@
     </scm>
     <issueManagement>
         <system>Github</system>
-        <url>https://github.com/GedMarc/Angular-Animate/issues</url>
+        <url>https://github.com/GedMarc/JWebSwing-AngularPrettyCheckboxes/issues</url>
     </issueManagement>
     <ciManagement>
         <system>TeamCity</system>
