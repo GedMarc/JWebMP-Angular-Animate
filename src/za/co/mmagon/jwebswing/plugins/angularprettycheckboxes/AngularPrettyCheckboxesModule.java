@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.angularanimate;
+package za.co.mmagon.jwebswing.plugins.angularprettycheckboxes;
 
 import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
 
@@ -8,15 +8,15 @@ import za.co.mmagon.jwebswing.base.angular.modules.AngularModuleBase;
  * @author Marc Magon
  * @since 08 Jun 2017
  */
-class AngularAnimateModule extends AngularModuleBase
+class AngularPrettyCheckboxesModule extends AngularModuleBase
 {
 	
 	private static final long serialVersionUID = 1L;
 	
 	/*
-	 * Constructs a new AngularAnimateModule
+	 * Constructs a new AngularPrettyCheckboxesModule
 	 */
-	public AngularAnimateModule()
+	public AngularPrettyCheckboxesModule()
 	{
 		super("ngAnimate");
 	}
