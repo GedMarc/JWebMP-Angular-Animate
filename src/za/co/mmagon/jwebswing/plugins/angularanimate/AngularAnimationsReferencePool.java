@@ -28,13 +28,13 @@ enum AngularAnimationsReferencePool implements ReferencePool
 	{
 	
 	}
-
+	
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
 	AngularAnimationsReferencePool(String data)
 	{
-
+	
 	}
 	
 	AngularAnimationsReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
