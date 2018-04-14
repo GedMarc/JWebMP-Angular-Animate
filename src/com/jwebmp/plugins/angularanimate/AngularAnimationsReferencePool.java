@@ -1,9 +1,9 @@
-package za.co.mmagon.jwebswing.plugins.angularanimate;
+package com.jwebmp.plugins.angularanimate;
 
-import za.co.mmagon.jwebswing.base.references.CSSReference;
-import za.co.mmagon.jwebswing.base.references.JavascriptReference;
-import za.co.mmagon.jwebswing.base.servlets.enumarations.RequirementsPriority;
-import za.co.mmagon.jwebswing.base.servlets.interfaces.ReferencePool;
+import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.base.references.JavascriptReference;
+import com.jwebmp.base.servlets.enumarations.RequirementsPriority;
+import com.jwebmp.base.servlets.interfaces.ReferencePool;
 
 /**
  * References for angular
@@ -20,15 +20,15 @@ enum AngularAnimationsReferencePool implements ReferencePool
 	private String data;
 	private JavascriptReference javaScriptReference;
 	private CSSReference cssReference;
-	
+
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
 	AngularAnimationsReferencePool()
 	{
-	
+
 	}
-	
+
 	AngularAnimationsReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
@@ -42,31 +42,31 @@ enum AngularAnimationsReferencePool implements ReferencePool
 			this.cssReference.setPriority(RequirementsPriority.DontCare);
 		}
 	}
-	
+
 	@Override
 	public JavascriptReference getJavaScriptReference()
 	{
 		return javaScriptReference;
 	}
-	
+
 	@Override
 	public void setJavaScriptReference(JavascriptReference javaScriptReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 	}
-	
+
 	@Override
 	public CSSReference getCssReference()
 	{
 		return cssReference;
 	}
-	
+
 	@Override
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
 	}
-	
+
 	/**
 	 * Returns the name or the data contained within
 	 *

@@ -1,10 +1,10 @@
-package za.co.mmagon.jwebswing.plugins.angularanimate;
+package com.jwebmp.plugins.angularanimate;
 
-import za.co.mmagon.jwebswing.Page;
-import za.co.mmagon.jwebswing.PageConfigurator;
-import za.co.mmagon.jwebswing.base.angular.AngularPageConfigurator;
-import za.co.mmagon.jwebswing.plugins.PluginInformation;
-import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.Page;
+import com.jwebmp.PageConfigurator;
+import com.jwebmp.base.angular.AngularPageConfigurator;
+import com.jwebmp.plugins.PluginInformation;
+import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -22,9 +22,9 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://docs.angularjs.org/guide/animations",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularAnimate.jar/download"
-)
-public class AngularAnimatePageConfigurator extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularAnimate.jar/download")
+public class AngularAnimatePageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -44,8 +44,11 @@ public class AngularAnimatePageConfigurator extends PageConfigurator
 		{
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
-			page.getBody().addJavaScriptReference(AngularAnimationsReferencePool.AngularAnimations.getJavaScriptReference());
-			page.getAngular().getAngularModules().add(new AngularAnimateModule());
+			page.getBody()
+			    .addJavaScriptReference(AngularAnimationsReferencePool.AngularAnimations.getJavaScriptReference());
+			page.getAngular()
+			    .getAngularModules()
+			    .add(new AngularAnimateModule());
 		}
 		return page;
 	}
