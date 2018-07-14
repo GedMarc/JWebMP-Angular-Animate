@@ -11,7 +11,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum AngularAnimationsReferencePool implements ReferencePool
+enum AngularAnimationsReferencePool
+		implements ReferencePool
 {
 	AngularAnimations(new JavascriptReference("AngularAnimations", 1.6, "bower_components/angular-animate/angular-animate.js"), null);
 	/**
@@ -44,18 +45,6 @@ enum AngularAnimationsReferencePool implements ReferencePool
 	}
 
 	@Override
-	public JavascriptReference getJavaScriptReference()
-	{
-		return javaScriptReference;
-	}
-
-	@Override
-	public void setJavaScriptReference(JavascriptReference javaScriptReference)
-	{
-		this.javaScriptReference = javaScriptReference;
-	}
-
-	@Override
 	public CSSReference getCssReference()
 	{
 		return cssReference;
@@ -65,6 +54,18 @@ enum AngularAnimationsReferencePool implements ReferencePool
 	public void setCssReference(CSSReference cssReference)
 	{
 		this.cssReference = cssReference;
+	}
+
+	@Override
+	public JavascriptReference getJavaScriptReference()
+	{
+		return javaScriptReference;
+	}
+
+	@Override
+	public void setJavaScriptReference(JavascriptReference javaScriptReference)
+	{
+		this.javaScriptReference = javaScriptReference;
 	}
 
 	/**
