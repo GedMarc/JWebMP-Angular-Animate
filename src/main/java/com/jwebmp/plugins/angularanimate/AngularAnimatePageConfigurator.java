@@ -1,10 +1,10 @@
 package com.jwebmp.plugins.angularanimate;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * @author Marc Magon
@@ -24,11 +24,8 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginOriginalHomepage = "https://docs.angularjs.org/guide/animations",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularAnimate.jar/download")
 public class AngularAnimatePageConfigurator
-		extends PageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new AngularAnimatePageConfigurator
 	 */
@@ -46,9 +43,6 @@ public class AngularAnimatePageConfigurator
 			AngularPageConfigurator.setRequired(true);
 			page.getBody()
 			    .addJavaScriptReference(AngularAnimationsReferencePool.AngularAnimations.getJavaScriptReference());
-			page.getAngular()
-			    .getAngularModules()
-			    .add(new AngularAnimateModule());
 		}
 		return page;
 	}
