@@ -22,24 +22,28 @@
             <artifactId>jwebmp-core</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>guiced-injection</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>jwebmp-log-master</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>jwebmp-interception</artifactId>
             <version>${project.version}</version>
             <classifier>${jwebmp.runtime.classifier}</classifier>
+            <optional>true</optional>
         </dependency>
 
         <dependency>
@@ -62,7 +66,7 @@
     </dependencies>
 
     <scm>
-        <url>https://jwebswing.com/jira/secure/RapidBoard.jspa?rapidView=1&amp;view=planning.nodetail&amp;epics=visible&amp;selectedEpic=JWEB-19Marc?tab=repositories</url>
+        <url>https://jwebmp/jira/secure/RapidBoard.jspa?rapidView=1&amp;view=planning.nodetail&amp;epics=visible&amp;selectedEpic=JWEB-19Marc?tab=repositories</url>
     </scm>
 
     <issueManagement>
