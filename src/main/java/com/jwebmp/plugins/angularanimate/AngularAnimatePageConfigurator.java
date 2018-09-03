@@ -28,12 +28,42 @@ import javax.validation.constraints.NotNull;
 public class AngularAnimatePageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
 	/*
 	 * Constructs a new AngularAnimatePageConfigurator
 	 */
 	public AngularAnimatePageConfigurator()
 	{
 		//Nothing needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return AngularAnimatePageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		AngularAnimatePageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -48,5 +78,11 @@ public class AngularAnimatePageConfigurator
 			    .addJavaScriptReference(AngularAnimationsReferencePool.AngularAnimations.getJavaScriptReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return AngularAnimatePageConfigurator.enabled;
 	}
 }
