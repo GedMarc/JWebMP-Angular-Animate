@@ -19,14 +19,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,animations, ui,web ui, framework",
 		pluginSubtitle = "these animation hooks are set in place to trigger animations during the life cycle of various directives ",
 		pluginSourceUrl = "https://docs.angularjs.org/guide/animations",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Angular-Animate/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Angular-Animate",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-Animate/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-Animate",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://docs.angularjs.org/guide/animations",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularAnimate.jar/download")
 public class AngularAnimatePageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularAnimatePageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
