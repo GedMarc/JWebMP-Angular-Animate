@@ -31,7 +31,6 @@ public class AngularAnimateModule
 		implements IAngularModule<AngularAnimateModule>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularAnimateModule
