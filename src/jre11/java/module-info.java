@@ -1,11 +1,3 @@
-import com.jwebmp.core.base.angular.services.IAngularModule;
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.angularanimate.AngularAnimateModule;
-import com.jwebmp.plugins.angularanimate.AngularAnimatePageConfigurator;
-import com.jwebmp.plugins.angularanimate.injections.AngularAnimateExclusionsModule;
-
 module com.jwebmp.plugins.angularanimate {
 	exports com.jwebmp.plugins.angularanimate;
 
@@ -14,10 +6,10 @@ module com.jwebmp.plugins.angularanimate {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides IPageConfigurator with AngularAnimatePageConfigurator;
-	provides IAngularModule with AngularAnimateModule;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularanimate.AngularAnimatePageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularanimate.AngularAnimateModule;
 
-	provides IGuiceScanModuleExclusions with AngularAnimateExclusionsModule;
-	provides IGuiceScanJarExclusions with AngularAnimateExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularanimate.injections.AngularAnimateExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularanimate.injections.AngularAnimateExclusionsModule;
 
 }
