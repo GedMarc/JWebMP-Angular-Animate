@@ -10,6 +10,5 @@ module com.jwebmp.plugins.angularanimate {
 	provides com.jwebmp.core.base.angular.services.IAngularModule with com.jwebmp.plugins.angularanimate.AngularAnimateModule;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularanimate.injections.AngularAnimateExclusionsModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularanimate.injections.AngularAnimateExclusionsModule;
 
 }
