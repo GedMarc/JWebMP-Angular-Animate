@@ -3,6 +3,7 @@ package com.jwebmp.plugins.angularanimate;
 import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -14,17 +15,23 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "Angular Animate",
 		pluginDescription = "These animation hooks in the angular animation for the project.",
-		pluginUniqueName = "jwebswing-angular-animate",
-		pluginVersion = "1.6.4",
+		pluginUniqueName = "jwebmp-angular-animate",
+		pluginDependancyUniqueIDs = "angular",
+		pluginVersion = "1.8.2",
 		pluginCategories = "angular,animations, ui,web ui, framework",
 		pluginSubtitle = "these animation hooks are set in place to trigger animations during the life cycle of various directives ",
 		pluginSourceUrl = "https://docs.angularjs.org/guide/animations",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Angular-Animate/wiki",
 		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Angular-Animate",
-		pluginIconUrl = "",
-		pluginIconImageUrl = "",
+		pluginIconImageUrl = "https://angularjs.org/img/AngularJS-large.png",
+		pluginIconUrl = "https://angularjs.org/img/AngularJS-large.png",
 		pluginOriginalHomepage = "https://docs.angularjs.org/guide/animations",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularAnimate.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.angular/jwebmp-angular-animate",
+		pluginGroupId = "com.jwebmp.plugins.angular",
+		pluginArtifactId = "jwebmp-angular-animate",
+		pluginModuleName = "com.jwebmp.plugins.angularanimate",
+		pluginStatus = PluginStatus.Released
+)
 public class AngularAnimatePageConfigurator
 		implements IPageConfigurator<AngularAnimatePageConfigurator>
 {
