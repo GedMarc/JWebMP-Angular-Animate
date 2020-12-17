@@ -75,7 +75,7 @@ public class AngularAnimatePageConfigurator
 
 	@NotNull
 	@Override
-	public Page configure(Page page)
+	 public Page<?> configure(Page<?> page)
 	{
 		if (!page.isConfigured() && enabled())
 		{
