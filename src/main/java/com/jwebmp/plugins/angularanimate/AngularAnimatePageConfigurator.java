@@ -13,9 +13,9 @@ import jakarta.validation.constraints.NotNull;
  * @author GedMarc
  * @since 08 Jun 2017
  */
-@PluginInformation(pluginName = "Angular Animate",
+@PluginInformation(pluginName = "Animate",
 		pluginDescription = "These animation hooks in the angular animation for the project.",
-		pluginUniqueName = "jwebmp-angular-animate",
+		pluginUniqueName = "angular-animate",
 		pluginDependancyUniqueIDs = "angular",
 		pluginVersion = "1.8.2",
 		pluginCategories = "angular,animations, ui,web ui, framework",
